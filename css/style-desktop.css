@@ -1,0 +1,387 @@
+/*
+	Astral by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+
+/*********************************************************************************/
+/* Basic                                                                         */
+/*********************************************************************************/
+
+	html
+	{
+		min-width: 100%;
+		min-height: 100%;
+	}
+
+	body
+	{
+		width: 100%;
+		min-width: 1000px;
+		min-height: 100%;
+		overflow-y: scroll;
+		background-attachment: fixed;
+	}
+
+	body,input,textarea,select
+	{
+		font-size: 14pt;
+		line-height: 1.75em;
+	}
+	
+	h1
+	{
+		font-size: 2.4em;
+		letter-spacing: -0.015em;
+	}
+
+	h2
+	{
+		font-size: 1.8em;
+		letter-spacing: -0.015em;
+	}
+	
+	h3, h4, h5, h6
+	{
+		font-size: 1.25em;
+		letter-spacing: -0.015em;
+	}
+
+	/* Section/Article */	
+	
+		header
+		{
+			margin: 0 0 1.5em 0;
+		}
+
+			header > p
+			{
+				margin: 0.5em 0 0 0;
+			}
+
+	/* Button */
+
+		input[type="button"],
+		input[type="submit"],
+		input[type="reset"],
+		.button
+		{
+			padding: 0.7em 1.5em 0.7em 1.5em;
+		}
+
+			input[type="button"].small,
+			input[type="submit"].small,
+			input[type="reset"].small,
+			.button.small
+			{
+				font-size: 0.75em;
+			}
+			
+			input[type="button"].big,
+			input[type="submit"].big,
+			input[type="reset"].big,
+			.button.big
+			{
+				font-size: 1.25em;
+				padding: 0.5em 1.25em 0.5em 1.25em;
+			}
+			
+			input[type="button"].huge,
+			input[type="submit"].huge,
+			input[type="reset"].huge,
+			.button.huge
+			{
+				font-size: 1.5em;
+				padding: 0.5em 1.25em 0.5em 1.25em;
+			}
+	
+/*********************************************************************************/
+/* Wrapper                                                                       */
+/*********************************************************************************/
+			
+	#wrapper
+	{
+		width: 45em;
+		margin: 0 auto;
+		opacity: 0.00001;
+	}
+
+		#wrapper.tall
+		{
+			padding-bottom: 6em;
+		}
+	
+/*********************************************************************************/
+/* Nav                                                                           */
+/*********************************************************************************/
+	
+	#nav
+	{
+		text-align: center;
+		height: 4.25em;
+		cursor: default;
+	}
+	
+		#nav a
+		{
+			font-size: 2.5em;
+			margin: 0 0.25em 0 0.25em;
+			opacity: 0.35;
+			outline: 0;
+			-moz-transition: opacity .25s ease-in-out;
+			-webkit-transition: opacity .25s ease-in-out;
+			-o-transition: opacity .25s ease-in-out;
+			-ms-transition: opacity .25s ease-in-out;
+			transition: opacity .25s ease-in-out;
+		}
+
+			#nav a:before
+			{
+				font-size: 0.8em;
+			}
+
+			#nav a:after
+			{
+				content: '';
+				display: block;
+				position: absolute;
+				left: 50%;
+				bottom: -0.75em;
+				margin-left: -0.5em;
+				border-bottom: solid 0em #ffffff;
+				border-left: solid 0.5em transparent;
+				border-right: solid 0.5em transparent;
+				-moz-transition: border-bottom-width .25s ease-in-out;
+				-webkit-transition: border-bottom-width .25s ease-in-out;
+				-o-transition: border-bottom-width .25s ease-in-out;
+				-ms-transition: border-bottom-width .25s ease-in-out;
+				transition: border-bottom-width .25s ease-in-out;
+			}
+		
+			#nav a span
+			{
+				display: block;
+				position: absolute;
+				background: #222222;
+				color: #ffffff;
+				top: -2.75em;
+				font-size: 0.3em;
+				line-height: 1.5em;
+				left: 50%;
+				opacity: 0;
+				-moz-transition: opacity .25s ease-in-out;
+				-webkit-transition: opacity .25s ease-in-out;
+				-o-transition: opacity .25s ease-in-out;
+				-ms-transition: opacity .25s ease-in-out;
+				transition: opacity .25s ease-in-out;
+				padding: 10px;
+				/* Labels not wide enough? Increase its width below and set margin-left to ((width / 2) * -1) */
+				width: 5.5em;
+				margin-left: -2.75em;
+			}
+			
+				#nav a span:after
+				{
+					content: '';
+					display: block;
+					position: absolute;
+					bottom: -0.4em;
+					left: 50%;
+					margin-left: -0.6em;
+					border-top: solid 0.6em #222222;
+					border-left: solid 0.6em transparent;
+					border-right: solid 0.6em transparent;
+				}
+
+			#nav a:hover
+			{
+				opacity: 1.0;
+			}
+
+				#nav a:hover span
+				{
+					opacity: 1.0;
+				}	
+			
+			#nav a.active
+			{
+				opacity: 1.0;
+			}
+
+				#nav a.active:after
+				{
+					border-bottom-width: 0.5em;
+				}
+			
+/*********************************************************************************/
+/* Panels                                                                        */
+/*********************************************************************************/
+
+	#main
+	{
+		width: 45em;
+		background: #ffffff;
+		box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.25);
+	}
+
+	.panel
+	{
+		padding: 2.5em 2.5em 3.5em 2.5em;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 45em;
+	}
+	
+	/* Me */
+	
+		#me
+		{
+			padding: 0;
+			height: 20em;
+		}
+
+		#main #me {
+			height: 360px !important;
+        }
+		
+			#me .pic
+			{
+				display: block;
+				position: absolute;
+				right: -1px;
+				top: 0;
+				text-decoration: none;
+			}
+			
+				#me .pic img
+				{
+					position: relative;
+					display: block;
+					height: 100%;
+          filter: grayscale(50%);
+				}
+			
+				#me .pic .arrow
+				{
+					display: block;
+          display: none;
+					position: absolute;
+					right: 0;
+					top: 50%;
+					margin-top: -1.375em;
+					width: 2.75em;
+					height: 2.75em;
+					background: #000;
+					background: rgba(0,0,0,0.25);
+					color: #ffffff;
+					text-align: center;
+					line-height: 2.75em;
+					font-size: 1.5em;
+					z-index: 1;
+					-moz-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+					-webkit-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+					-o-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+					-ms-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+					transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+				}
+
+					#me .pic .arrow:before
+					{
+						position: relative;
+						padding-right: 0;
+						top: 0.125em;
+					}
+			
+					#me .pic .arrow span
+					{
+						display: block;
+						text-indent: -9999px;
+					}
+				
+					#me .pic:hover .arrow
+					{
+						width: 3em;
+						padding-right: 0.25em;
+					}
+			
+			#me header
+			{
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				margin-left: 2.5em;
+			}
+			
+				#me header > h1
+				{
+					position: absolute;
+					left: 0;
+					bottom: 72.5%;
+					margin: 0;
+					font-size: 2.2em;
+				}
+				#me header > h2
+				{
+					position: absolute;
+					left: 0;
+					top: 37.5%;
+					margin: 0;
+					width: 600px;
+					font-size: 1.3em;
+				}
+				#me header > p 
+				{
+					position: absolute;
+					left: 0;
+					width: 525px;
+					top: 54.5%;
+					font-size: 1em;
+					margin-top: 0;
+				}
+				#find {
+					width: 50%;
+					float: left;
+				}
+				#contact {
+					width: 50%;	
+					float: left;
+				}
+				.form-group {
+					margin: 10px 0;
+				}
+
+/*********************************************************************************/
+/* Footer                                                                        */
+/*********************************************************************************/
+
+	#footer
+	{
+		text-align: center;
+		padding: 2em 0 0 0;
+		font-size: 1.2em;
+	}
+	#resume-img {
+		width: 50px;
+		float: left;
+		opacity: .65;
+	}
+	#resume-img:hover {
+		opacity: 1;
+	}
+	#resume {
+		display: inline-block;
+		padding: 60px 0 0 0; 	
+		*display: inline; /* IE7 fix for inline-block */
+		*zoom: 1;
+	}
+	#resume-text {
+		margin: 10px;
+		float: left;
+	}
+h4 {
+	font-size: 1.1em;
+	color: #999;
+}
