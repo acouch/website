@@ -249,16 +249,17 @@
 			{
 				display: block;
 				position: absolute;
-				right: -1px;
+				right: 0px;
 				top: 0;
 				text-decoration: none;
+        width: 347px;
 			}
 			
 				#me .pic img
 				{
 					position: relative;
 					display: block;
-					height: 100%;
+					width: 100%;
           filter: grayscale(50%);
 				}
 			
@@ -336,7 +337,7 @@
 				{
 					position: absolute;
 					left: 0;
-					width: 525px;
+					width: 429px;
 					top: 54.5%;
 					font-size: 1em;
 					margin-top: 0;
